@@ -21,10 +21,16 @@
             display: block;
         }
     </style>
-
+    
+    <link rel="modulepreload" href="./test_proekt-be42f948807fbddf.js">
+    <link rel="preload" href="./test_proekt-be42f948807fbddf_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
 </head>
 <body>
     <canvas id="gemini_cad_canvas"></canvas>
+
+    <script type="module">
+        import init from './test_proekt-be42f948807fbddf.js';
+        init('./test_proekt-be42f948807fbddf_bg.wasm');
+    </script>
 </body>
 </html>
-
